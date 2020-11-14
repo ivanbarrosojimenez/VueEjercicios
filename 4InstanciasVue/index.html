@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vue</title>
+    
+</head>
+<body>
+    <div class="flex-container">
+        <div id="app" class="flex-item flex-item-content">
+            <h1 >{{mensaje}}</h1>
+            <h2>{{contenido}}</h2>
+            
+            <h3>{{titulo1}}</h3>
+            {{post1}}
+            <h3>{{titulo2}}</h3>
+            {{post2}}
+            <h3>{{titulo3}}</h3>
+            {{post3}}
+        </div>
+
+        <div id="app2" class="flex-item flex-item-summary">
+            <h2 >{{mensaje}}</h2>
+            <ul class="summary">
+                <li class="item">{{titulo1}}</li>
+                <li class="item">{{titulo2}}</li>
+                <li class="item">{{titulo3}}</li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="datos.js"></script>
+</body>
+</html>
