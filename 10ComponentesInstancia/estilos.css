@@ -1,0 +1,7 @@
+  .console {
+    list-style: decimal;
+    padding: 40;
+    background-color: lightgray;
+    border: solid 1px red;
+  }
+  
