@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vue Blog</title>
+    
+</head>
+<body>
+        <div id="app">
+            <h2>Nueva entrada</h2>
+            <h3>Titulo</h3>
+            <input v-model="titulo" placeholder="Escribe un titulo">
+            <h3>Entrada</h3>
+            <textarea cols="50" v-model="post" placeholder="Escribe la entrada"></textarea>
+            <h2>{{ titulo }}</h2>
+            <p>{{post}}</p>
+
+            <div class="flex-containter">
+                <div class="flex-item flex-item-content"></div>
+                <h2>Contenido</h2>
+                <h3>{{titulo1}}</h3> {{post1}}
+                <h3>{{titulo2}}</h3> {{post2}}
+                <h3>{{titulo3}}</h3> {{post3}}
+            </div>
+
+            <div class="flex-item flex-item-summary">
+                <h2>Contenido</h2>
+                <ul class="summary">
+                    <li class="item">{{titulo1}}</li>
+                    <li class="item">{{titulo2}}</li>
+                    <li class="item">{{titulo3}}</li>
+                </ul>
+            </div>
+        </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="datos.js"></script>
+</body>
+</html>
