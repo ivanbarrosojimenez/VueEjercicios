@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vue</title>
+    <style src="estilos.css"></style>
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+<body>
+    <div id="app">
+        <mi-traductor></mi-trductor>
+    </div>
+
+    <ul id="myULContainer" class="console"></ul>
+    <script type="application/javascript" src="https://cdn.rawgit.com/Alorel/console-log-html/master/console-log-html.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="datos.js"></script>
+    <script>
+            ConsoleLogHTML.connect(document.getElementById("myULContainer"), ConsoleLogHTML.DEFAULTS, true, true, false); // Redirect log messages
+
+    </script>
+</body>
+</html>
