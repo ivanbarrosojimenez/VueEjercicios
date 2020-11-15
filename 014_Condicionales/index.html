@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vue</title>
+    <style src="estilos.css"></style>
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+<body>
+    <div id="app">
+       <h1>{{titulo}}</h1> 
+      <select v-model="mascota" v-on:change="elegirMascota">
+          <option></option>
+          <option>Gato</option>
+          <option>Perro</option>
+      </select>
+ 
+
+        <div v-if="this.mascota != ''">
+            <div v-if="this.mascota === 'Gato'">
+                <h1>Miau</h1>
+                <img :src="rutaImagen"></img>
+            </div>
+            <div v-else="this.mascota === 'Perro'">
+                <h1>Guau</h1>
+                <img :src="rutaImagen"></img>
+            </div>
+        </div>
+    </div>
+
+    <ul id="myULContainer" class="console"></ul>
+    <script type="application/javascript" src="https://cdn.rawgit.com/Alorel/console-log-html/master/console-log-html.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="datos.js"></script>
+    <script>
+            ConsoleLogHTML.connect(document.getElementById("myULContainer"), ConsoleLogHTML.DEFAULTS, true, true, false); // Redirect log messages
+
+    </script>
+</body>
+</html>
