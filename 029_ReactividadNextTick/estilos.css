@@ -1,0 +1,19 @@
+  .console {
+    list-style: decimal;
+    padding: 20px;
+    background-color: lightgray;
+    border: solid 1px red;
+  }
+
+  .mouseArea{
+    width: 300px;
+    border: 15px solid green;
+    padding:50px;
+    margin: 20px;  
+  }
+  .resultado{
+    color: green;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
