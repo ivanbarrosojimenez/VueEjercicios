@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vue</title>
+    <style src="estilos.css"></style>
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+<body>
+    <div id="app">
+       <h1 >{{titulo}}</h1>
+       <p><b>Condicional</b></p>
+    <p v-if="step==0">{{step}}-Si desaparece, este contenido no estará en DOM </p>
+    <p v-else-if="step==1">{{step}}-Inspecciona DOM, lo anterior no esta!</p>
+    <p v-else>FIN</p>
+
+    <p><b>V-SHOW</b></p>
+    <p v-show="step==0">{{step}}-Si desaparece, este contenido permanenterá en DOM</p>
+    <p v-show="step==1">{{step}}-Inspecciona DOM, el anterior permanece!</p>
+    </div>
+
+    <ul id="myULContainer" class="console"></ul>
+    <script type="application/javascript" src="https://cdn.rawgit.com/Alorel/console-log-html/master/console-log-html.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="datos.js"></script>
+    <script>
+            ConsoleLogHTML.connect(document.getElementById("myULContainer"), ConsoleLogHTML.DEFAULTS, true, true, false); // Redirect log messages
+
+    </script>
+</body>
+</html>
